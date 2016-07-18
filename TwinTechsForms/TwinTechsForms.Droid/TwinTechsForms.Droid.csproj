@@ -99,13 +99,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Resources\Resource.designer.cs" />
-    <Compile Include="TwinTechs\Droid\Controls\FastCellCache.cs" />
-    <Compile Include="TwinTechs\Droid\Controls\FastCellRenderer.cs" />
-    <Compile Include="TwinTechs\Droid\Controls\FastImageRenderer.cs" />
-    <Compile Include="TwinTechs\Droid\Controls\ImageLoaderCache.cs" />
     <Compile Include="TwinTechs\Droid\Extensions\ViewExtensions.cs" />
-    <Compile Include="TwinTechs\Droid\Controls\FastGridCellCache.cs" />
-    <Compile Include="TwinTechs\Droid\Controls\PageViewContainerRenderer.cs" />
     <Compile Include="TwinTechs\Gestures\BaseNativeGestureRecognizer.cs" />
     <Compile Include="TwinTechs\Gestures\NativeGestureCoordinator.cs" />
     <Compile Include="TwinTechs\Gestures\NativeGestureRecognizerFactory.cs" />
@@ -116,7 +110,6 @@
     <Compile Include="TwinTechs\Gestures\NativeTapGestureRecognizer.cs" />
     <Compile Include="TwinTechs\Gestures\GestureTouchDispatcher.cs" />
     <Compile Include="TwinTechs\Gestures\GestureMotionEvent.cs" />
-    <Compile Include="TwinTechs\Droid\Controls\ViewMaskExtensionProvider.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
