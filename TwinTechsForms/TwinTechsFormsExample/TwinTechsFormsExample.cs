@@ -2,7 +2,7 @@
 
 using Xamarin.Forms;
 using TwinTechs.Example;
-using TwinTechs.Example.GridView;
+using TwinTechs.Example.Gestures;
 
 namespace TwinTechs
 {
@@ -11,9 +11,7 @@ namespace TwinTechs
 		public App ()
 		{
 			// The root page of your application
-//			MainPage = new GridViewOptions ();
-//			MainPage = new GridViewPerformance2 ();
-			MainPage = new NavigationPage (new SampleMenu ());
+			MainPage = new NavigationPage (new LongPressGestureExample());
 		}
 
 		protected override void OnStart ()

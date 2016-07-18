@@ -3,12 +3,18 @@
 <ContentPage
 	xmlns="http://xamarin.com/schemas/2014/forms"
 	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:gestures="clr-namespace:TwinTechs.Gestures;assembly=TwinTechsForms"
 	x:Class="TwinTechs.Example.SampleMenu"
 	Title="TwinTechsForms Examples">
 
 	<ContentPage.Content>
+    <Label Text="Long Press Test">
+      <Label.GestureRecognizers>
+        <gestures:LongPressGestureRecognizer OnAction="BaseGestureRecognizer_OnOnAction"></gestures:LongPressGestureRecognizer>
+      </Label.GestureRecognizers>
+    </Label>
 
-		<TableView
+		<!--<TableView
 			Intent="Form">
 
 			<TableSection
@@ -190,7 +196,7 @@
 			</TableSection>
 
 		</TableView>
-
+-->
 	</ContentPage.Content>
 
 </ContentPage>

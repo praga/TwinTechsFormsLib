@@ -59,7 +59,7 @@ namespace TwinTechs.Droid.Extensions
 		{
 			var renderer = source.GetRenderer ();
 			if (renderer == null) {
-				renderer = RendererFactory.GetRenderer (source);
+				renderer = Platform.CreateRenderer(source);
 				source.SetRenderer (renderer);
 				renderer = source.GetRenderer ();
 			}

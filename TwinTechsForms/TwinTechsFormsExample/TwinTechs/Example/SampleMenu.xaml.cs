@@ -1,12 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using System.Diagnostics;
 using Xamarin.Forms;
-using TwinTechs.Example.FastCells;
-using TwinTechs.Example.GridView;
 using TwinTechs.Example.Gestures;
-using TwinTechs.Example.PageInPage;
-using TwinTechs.Example.CircleView;
+using TwinTechs.Gestures;
 
 namespace TwinTechs.Example
 {
@@ -17,7 +14,7 @@ namespace TwinTechs.Example
 			InitializeComponent ();
 		}
 
-		#region fast cell samples
+		/*#region fast cell samples
 
 		void OnDefaultSimpleCell (object sender, object args)
 		{
@@ -210,7 +207,12 @@ namespace TwinTechs.Example
 			await Navigation.PushAsync (new SvgImageSample.SvgImageSamplePage ());
 		}
 
-		#endregion
+		#endregion*/
+
+	    private void BaseGestureRecognizer_OnOnAction( BaseGestureRecognizer arg1, GestureRecognizerState arg2 )
+	    {
+            Debug.WriteLine( "long press" );
+	    }
 	}
 }
 
